@@ -9,22 +9,32 @@
         body {
             height: 100vh;
             background-color: black;
-            background-image: url(wallpaper002.jpg);
-            background-repeat: repeat;
+            background-image: url(imagens/wallpaper002.jpg);
+            background-repeat: no-repeat;
             background-position: center center;
-            background-size: cover/*Ele mostra a imagem nos 100% da ViewPort vh e no ecra todo. Tem tb o 'contain' que mostra 100%da imagem, mas não ocupa o ecra todo.
+            background-size: cover; /*Ele mostra a imagem nos 100% da ViewPort vh e no ecra todo. Tem tb o 'contain' que mostra 100%da imagem, mas não ocupa o ecra todo.
             
             Tambem posso pôr background-size:100% 100% - Nesta situação ele mostra 100% da imagem mas nao cobre o ecra todo
             */
-                
+            background-attachment: fixed;
+
+            /*    
+             -- Shorthand - background -- 
+                color > image > position > size[cover-contain] > attachemnt
+            Ex: background: black url(fundo002.html) center center no-repeat [cover**] fixed;
+            ** Funciona mas sem o [size]. Temos que por o background-size a seguir à Shorthand
+
+            */  
+            
+
         }
         main {
             
             background-color: rgb(255, 255, 255);
+            max-width: 300px;
             border-radius: 20px;
-            width: 100%;
+            border: 2px solid darkblue;
             padding: 10px;
-            width: 400px;
             margin: auto;
         
         }
@@ -32,6 +42,7 @@
 </head>
 <body>
     <main>
+        <a href=""></a>
         <h1>Teste de imagem de fundo</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nulla quis vel omnis eaque quo pariatur quos optio minima animi corrupti facilis dolorum nihil, hic nesciunt voluptatibus illum sit error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo omnis ipsum adipisci rem iure harum porro, ipsa voluptatibus fuga quam quaerat magni totam necessitatibus quidem soluta veniam vero. Et, nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, sint! Aperiam iste accusamus autem sit? Culpa laudantium omnis delectus repudiandae quia ut molestias perferendis aperiam, eum sit eaque nostrum consequatur.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nulla quis vel omnis eaque quo pariatur quos optio minima animi corrupti facilis dolorum nihil, hic nesciunt voluptatibus illum sit error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo omnis ipsum adipisci rem iure harum porro, ipsa voluptatibus fuga quam quaerat magni totam necessitatibus quidem soluta veniam vero. Et, nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, sint! Aperiam iste accusamus autem sit? Culpa laudantium omnis delectus repudiandae quia ut molestias perferendis aperiam, eum sit eaque nostrum consequatur.</p>
