@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+                border: 1px solid black;
+                border-collapse: collapse;
+                position: relative;
+               
+            }
+
+        caption {
+            padding: 10px;
+            background-color: rgba(197, 197, 198, 0.632);
+            font-size: large;
+            font-weight: bold;
+        }
+
+        tbody > tr:nth-child(2n) { /* Efeito zebrado - Dá a cor de 2 em 2 celulas (2n)*/
+            background-color: antiquewhite;
+        }
+
+
+        thead, tfoot {
+            background-color: gray;
+        }
+
+        thead > tr > th {
+            position: sticky; /* Fixar o cabeçaho da tabela*/
+            top: 0px; /* Definir a posição do cabeçalho*/
+            background-color: gray; /* Yb é necessário fixar a cor de fundo*/
+        }
+
+        td, th {
+                border: 1px solid black;
+                padding: 10px; 
+                
+            }
+        
+        td.num {
+            text-align: right   ;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Tabelas Grandes</h1>
+    <table>
+        <caption>Registo de passeios</caption>
+        <thead>
+            <tr>
+                <th>País</th>
+                <th>Distancia</th>
+                <th>Veículo</th>
+                <th>Terreno</th>
+            </tr>
+        </thead>
+    <tbody>
+            <tr>
+                <td>Portugal</td>
+                <td class="num">2.500</td>
+                <td>Mota</td>
+                <td>Estrada</td>
+            </tr>
+            <tr>
+                <td>Portugal</td>
+            </tr>
+            <tr>
+                <td>Italia</td>
+            </tr>
+            <tr>
+                <td>Portugal</td>
+            </tr>
+            <tr>
+                <td>Portugal</td>
+                <td class="num">2.500</td>
+                <td>Mota</td>
+                <td>Estrada</td>
+            </tr>
+            <tr>
+                <td>Portugal</td>
+            </tr>
+            <tr>
+                <td>Italia</td>
+            </tr>
+            <tr>
+                <td>Portugal</td>
+            </tr><tr>
+                <td>Portugal</td>
+                <td class="num">2.500</td>
+                <td>Mota</td>
+                <td>Estrada</td>
+            </tr>
+            <tr>
+                <td>Portugal</td>
+            </tr>
+            <tr>
+                <td>Italia</td>
+            </tr>
+            <tr>
+                <td>Portugal</td>
+            </tr><tr>
+                <td>Portugal</td>
+                <td class="num">2.500</td>
+                <td>Mota</td>
+                <td>Estrada</td>
+            </tr>
+            <tr>
+                <td>Portugal</td>
+            </tr>
+            <tr>
+                <td>Italia</td>
+            </tr>
+            <tr>
+                <td>Portugal</td>
+            </tr>
+            <tr>
+                <td>Portugal</td>
+                <td class="num">2.500</td>
+                <td>Mota</td>
+                <td>Estrada</td>
+            </tr>
+            <tr>
+                <td>Portugal</td>
+            </tr>
+            <tr>
+                <td>Italia</td>
+            </tr>
+            <tr>
+                <td>Portugal</td>
+            </tr><tr>
+                <td>Portugal</td>
+                <td class="num">2.500</td>
+                <td>Mota</td>
+                <td>Estrada</td>
+            </tr>
+            <tr>
+                <td>Portugal</td>
+            </tr>
+            <tr>
+                <td>Italia</td>
+            </tr>
+            <tr>
+                <td>Portugal</td>
+            </tr><tr>
+                <td>Portugal</td>
+                <td class="num">2.500</td>
+                <td>Mota</td>
+                <td>Estrada</td>
+            </tr>
+            <tr>
+                <td>Portugal</td>
+            </tr>
+            <tr>
+                <td>Italia</td>
+            </tr>
+            <tr>
+                <td>Portugal</td>
+            </tr>
+
+        
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <th>Total:</th>
+            <td>234.234.00</td>
+        </tr>
+
+    </tfoot>
+    </table>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quia quaerat recusandae ab sapiente omnis exercitationem, voluptatum aut officiis quam natus similique incidunt cumque qui adipisci nesciunt, fuga neque expedita? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, voluptas quae qui nostrum tempora totam omnis amet, ex dolore mollitia, reiciendis ad eum debitis. Nihil recusandae ratione tempora quisquam optio! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis necessitatibus tenetur impedit ab expedita earum minima, perferendis totam provident corrupti tempora at similique quod accusantium, maxime ea? Dolore, temporibus amet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste soluta placeat suscipit velit in eos quae vero praesentium, facilis saepe repudiandae iure totam ipsum recusandae? Cumque assumenda recusandae consequuntur officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam tempore aperiam inventore alias voluptatibus rem maxime molestiae omnis quis pariatur nulla ratione, perspiciatis itaque adipisci voluptas minima quae amet accusamus?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quia quaerat recusandae ab sapiente omnis exercitationem, voluptatum aut officiis quam natus similique incidunt cumque qui adipisci nesciunt, fuga neque expedita? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, voluptas quae qui nostrum tempora totam omnis amet, ex dolore mollitia, reiciendis ad eum debitis. Nihil recusandae ratione tempora quisquam optio! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis necessitatibus tenetur impedit ab expedita earum minima, perferendis totam provident corrupti tempora at similique quod accusantium, maxime ea? Dolore, temporibus amet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste soluta placeat suscipit velit in eos quae vero praesentium, facilis saepe repudiandae iure totam ipsum recusandae? Cumque assumenda recusandae consequuntur officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam tempore aperiam inventore alias voluptatibus rem maxime molestiae omnis quis pariatur nulla ratione, perspiciatis itaque adipisci voluptas minima quae amet accusamus?</p>   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quia quaerat recusandae ab sapiente omnis exercitationem, voluptatum aut officiis quam natus similique incidunt cumque qui adipisci nesciunt, fuga neque expedita? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, voluptas quae qui nostrum tempora totam omnis amet, ex dolore mollitia, reiciendis ad eum debitis. Nihil recusandae ratione tempora quisquam optio! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis necessitatibus tenetur impedit ab expedita earum minima, perferendis totam provident corrupti tempora at similique quod accusantium, maxime ea? Dolore, temporibus amet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste soluta placeat suscipit velit in eos quae vero praesentium, facilis saepe repudiandae iure totam ipsum recusandae? Cumque assumenda recusandae consequuntur officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam tempore aperiam inventore alias voluptatibus rem maxime molestiae omnis quis pariatur nulla ratione, perspiciatis itaque adipisci voluptas minima quae amet accusamus?</p>   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quia quaerat recusandae ab sapiente omnis exercitationem, voluptatum aut officiis quam natus similique incidunt cumque qui adipisci nesciunt, fuga neque expedita? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, voluptas quae qui nostrum tempora totam omnis amet, ex dolore mollitia, reiciendis ad eum debitis. Nihil recusandae ratione tempora quisquam optio! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis necessitatibus tenetur impedit ab expedita earum minima, perferendis totam provident corrupti tempora at similique quod accusantium, maxime ea? Dolore, temporibus amet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste soluta placeat suscipit velit in eos quae vero praesentium, facilis saepe repudiandae iure totam ipsum recusandae? Cumque assumenda recusandae consequuntur officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam tempore aperiam inventore alias voluptatibus rem maxime molestiae omnis quis pariatur nulla ratione, perspiciatis itaque adipisci voluptas minima quae amet accusamus?</p>
+</body>
+</html>

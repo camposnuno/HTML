@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#montra {
+            border: 2px dashed rgb(206, 49, 49);
+            width: 400px;
+            height: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Criar o meu primeiro iframe</h1>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis quidem, nobis quasi hic harum natus modi possimus aut qui perferendis culpa nisi nihil doloremque, voluptatum cupiditate totam? Aspernatur, consectetur qui! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, nostrum illo autem laborum rerum quidem cupiditate nesciunt accusamus doloribus fuga nobis officiis culpa! Fugiat accusamus consectetur alias doloribus sunt iure.</p>
+
+    <h2>Conteudo de iframe externo</h2>
+
+    <iframe src="https://www.desafios.com.pt/" frameborder="0" sandbox="sandbox" referrerpolicy="no-referrer">Nao épossível</iframe>
+<!-- SANDBOX="SANDBOX" = Bloqueia tudo site.
+     REFERRERPOLICY="NO-REFERRER" = Bloqueia todas a ações do site q está dentro do iframe.
+     REFERRERPOLICY="ALLOW-FORMS" = Só permite formulários. Mas tb tem outras opções.
+-->
+   
+
+    <h2>Mostar os links da Lista aqui dentro do iframe</h2>
+
+    <h3>Noticias de Portugal</h3>
+
+    <ul>
+        <li><a href="https://www.jn.pt" target="vista" >Jornal de Noticias</a></li>
+        <li><a href="https://www.dn.pt" target="vista">Diario de Noticias</a></li>
+        <li><a href="https://www.publico.pt" target="vista">Publico</a></li>
+    </ul>
+
+    <iframe id="montra" name="vista" src="paginas-extra.html/pag01.html" frameborder="0"  sandbox="sandbox" referrerpolicy="no-referrer" ></iframe>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione assumenda asperiores blanditiis fuga! Aut animi molestias quibusdam, possimus iste, qui praesentium fuga sequi nostrum eum ad odio, nisi quos in. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptate ipsa aperiam ab praesentium, sunt cupiditate rerum inventore illo recusandae est optio autem, ea at, quos esse fugiat alias temporibus! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, ipsum suscipit. Labore id consectetur reiciendis et quos quam asperiores quae eligendi iure modi! Deleniti iusto libero ad deserunt praesentium possimus.</p>
+    
+</body>
+</html>
