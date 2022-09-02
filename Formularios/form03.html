@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 3</title>
+    <style>
+        input[type=number] {
+            width: 50vw;
+        }
+    </style>
+</head>
+<body>
+    <h1>Alguns atributos da TAG input</h1>
+
+    <form action="formulario.php" method="get" autocomplete="on" >
+
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome"   required maxlength="30" placeholder="Escreva o seu nome" size="32" autocomplete="name" >
+        </p>
+        <p>
+            <label for="idata">Data de Nascimento:</label>
+            <input type="date" name="dta" id="idata">
+        </p>
+        <p>
+            <label for="imail">Email:</label>
+            <input type="email" name="mail" id="imail">
+        </p>
+        <p>
+            <label for="inif">NIF:</label>
+            <input type="number" name="nif" id="inif" required min="0" max="999999999" placeholder="De 0 a 9" size="20">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+
+
+    </form>
+    
+</body>
+</html>
