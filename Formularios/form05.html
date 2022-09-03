@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input atributos</title>
+</head>
+<body>
+        <h1>Input -> color range file</h1>
+    <form action="formulario.php" method="get">
+        <p>
+            <input type="color" name="cor" id="icor" value="#FCDB6F">
+            <label for="icor">Cor</label>
+        </p>
+        <p>
+            <input type="range" name="sat" id="isat" min="1" max="6" value="2"><!--No padrao vai de 1 a 100. numero de níveis-->
+            <label for="isat">Nível de Satisfação</label>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
