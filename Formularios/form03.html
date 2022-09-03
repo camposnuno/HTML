@@ -16,22 +16,33 @@
 
     <form action="formulario.php" method="get" autocomplete="on" >
 
-        <p>
-            <label for="inome">Nome:</label>
-            <input type="text" name="nome" id="inome"   required maxlength="30" placeholder="Escreva o seu nome" size="32" autocomplete="name" >
-        </p>
-        <p>
-            <label for="idata">Data de Nascimento:</label>
-            <input type="date" name="dta" id="idata">
-        </p>
-        <p>
-            <label for="imail">Email:</label>
-            <input type="email" name="mail" id="imail">
-        </p>
-        <p>
-            <label for="inif">NIF:</label>
-            <input type="number" name="nif" id="inif" required min="0" max="999999999" placeholder="De 0 a 9" size="20">
-        </p>
+        <fieldset> <!-- Agrupa os dados-->
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome"   required maxlength="30" placeholder="Escreva o seu nome" size="32" autocomplete="name" >
+            </p>
+            <p>
+                <label for="idata">Data de Nascimento:</label>
+                <input type="date" name="dta" id="idata">
+            </p>
+            <p>
+                <label for="imail">Email:</label>
+                <input type="email" name="mail" id="imail">
+            </p>
+            <p>
+                <label for="inif">NIF:</label>
+                <input type="number" name="nif" id="inif" required min="0" max="999999999" placeholder="De 0 a 9"  >
+            </p>
+            <p>
+                <!--
+                    Estudar  RegEx (Experessões regulares -
+                    neste Ex: a RegEx foi introduzida no atrinuto "pattern")
+                -->
+                <label for="itel">Telf:</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^[0-4]{3}-[0-4]{4}$" placeholder="000-0000" required>     
+            </p>
+        </fieldset>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
