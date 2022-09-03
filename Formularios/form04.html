@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Box e Radio</title>
+</head>
+<body>
+    <h1>Formulários com CheckBox e Radio</h1>
+
+    <form action="formulario.php" method="get">
+        <fieldset>
+            <legend>Sexo</legend>
+                <!-- Usar Radio quando é só pode secolher uma opção. 
+                    E tem q ter o mesmo nome (name)
+                -->
+                <input type="radio" name="sexo" id="imas" value="M"><label for="imas">Masculino</label><br> <!--value="M" - faz com q envie o valor M qunado selecionado (ver url)-->
+                <input type="radio" name="sexo" id="ifem" value="F"> <label for="ifem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Marca Favoritas</legend>
+                <input type="checkbox" name="bmw" id="ibmw"> <label for="ibmw">BMW</label><br>
+                <input type="checkbox" name="yam" id="iyam"> <label for="iyam">YAMAHA</label><br>
+                <input type="checkbox" name="ktm" id="iktm"><label for="iktm">KTM</label><br>
+                <input type="checkbox" name="hon" id="ihon" checked><label for="ihon">HONDA</label>
+        </fieldset>
+
+
+
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
