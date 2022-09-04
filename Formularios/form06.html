@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form06</title>
+</head>
+<body>
+    <h1>Formulários com select, datalist e textarea</h1>
+
+    <form action="formulario.php" method="post">
+        <p>
+            <label for="iloc">Localidade: </label>
+            <select name="loc" id="iloc" required>
+
+                <option value="">--Escolha--</option>
+                <optgroup label="Norte">  
+                    <option value="">Maia</option>
+                    <option value="">Matosinhos</option>
+                    <option value="">Porto</option>
+                    <option value="">Vila do conde</option>
+                </optgroup>
+
+                <optgroup label="Sul">
+                    <option value="">Lisboa</option>
+                    <option value="">Setubal</option>
+                    <option value="">Sintra</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="ipro">Profissão: </label>
+            <input type="text" name="pro" id="ipro" list="lpro">
+                <datalist id="lpro">
+                    <option value="Professor"></option>
+                    <option value="Médico"></option>
+                    <option value="Informático"></option>
+                </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem: </label><br>
+            <textarea name="imsg" id="msg" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+    
+</body>
+</html>
